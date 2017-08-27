@@ -1,0 +1,12 @@
+.\objects\i2c_eeprom.o: drive\i2c_eeprom.c
+.\objects\i2c_eeprom.o: drive\i2c_eeprom.h
+.\objects\i2c_eeprom.o: .\lib\inc\reuse.h
+.\objects\i2c_eeprom.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\i2c_eeprom.o: .\lib\inc\stm32f37x_i2c.h
+.\objects\i2c_eeprom.o: .\lib\inc\stm32f37x.h
+.\objects\i2c_eeprom.o: .\lib\inc\core_cm4.h
+.\objects\i2c_eeprom.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\i2c_eeprom.o: .\lib\inc\core_cmInstr.h
+.\objects\i2c_eeprom.o: .\lib\inc\core_cmFunc.h
+.\objects\i2c_eeprom.o: .\lib\inc\core_cm4_simd.h
+.\objects\i2c_eeprom.o: d:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\1.2.0\Device\Include\system_stm32f37x.h

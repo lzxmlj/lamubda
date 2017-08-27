@@ -1,0 +1,23 @@
+---- virtual_PWM_OUTPUT Matches (23 in 4 files) ----
+Main.c (user):void virtual_PWM_OUTPUT(u8 dc);
+Main.c (user):		  virtual_PWM_OUTPUT(40);
+Main.c (user):  	   	virtual_PWM_OUTPUT(g_cala[9]);
+Main.c (user):       //virtual_PWM_OUTPUT(KO2_V_HtrEffDewPt * KO2_V_HtrEffDewPt * 100 / (KO2_V_HtrEffHiLim * KO2_V_HtrEffHiLim) );
+Main.c (user):  	   	virtual_PWM_OUTPUT(40);
+Main.c (user):		virtual_PWM_OUTPUT(output_pwm );
+Main.c (user):void virtual_PWM_OUTPUT(u8 dc)
+Saw_Machine.htm (user):<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Saw_Machine.htm (user):<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Saw_Machine.htm (user):<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Saw_Machine.htm (user):<P><STRONG><a name="[ad]"></a>virtual_PWM_OUTPUT</STRONG> (Thumb, 280 bytes, Stack size 8 bytes, main.o(i.virtual_PWM_OUTPUT))
+Saw_Machine.htm (user):<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = virtual_PWM_OUTPUT
+Sdadc.htm (user):<BR><BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Sdadc.htm (user):<BR><BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Sdadc.htm (user):<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Sdadc.htm (user):<P><STRONG><a name="[df]"></a>virtual_PWM_OUTPUT</STRONG> (Thumb, 280 bytes, Stack size 8 bytes, main.o(i.virtual_PWM_OUTPUT))
+Sdadc.htm (user):<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = virtual_PWM_OUTPUT
+Show_demo.htm (objects):<BR><BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Show_demo.htm (objects):<BR><BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Show_demo.htm (objects):<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;virtual_PWM_OUTPUT
+Show_demo.htm (objects):<P><STRONG><a name="[f4]"></a>virtual_PWM_OUTPUT</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, main.o(i.virtual_PWM_OUTPUT))
+Show_demo.htm (objects):<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = virtual_PWM_OUTPUT

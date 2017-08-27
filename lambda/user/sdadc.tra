@@ -1,0 +1,33 @@
+*** Creating Trace Output File 'sdadc.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_stm32f37x.o"'
+### List of Objects: adding '"stm32f37x_it.o"'
+### List of Objects: adding '"system_stm32f37x.o"'
+### List of Objects: adding '"uart.o"'
+### List of Objects: adding '"sdadc.o"'
+### List of Objects: adding '"systick.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"stm32f37x_usart.o"'
+### List of Objects: adding '"stm32f37x_gpio.o"'
+### List of Objects: adding '"stm32f37x_sdadc.o"'
+### List of Objects: adding '"stm32f37x_exti.o"'
+### List of Objects: adding '"stm32f37x_misc.o"'
+### List of Objects: adding '"stm32f37x_rcc.o"'
+### List of Objects: adding '"stm32f37x_syscfg.o"'
+### List of Objects: adding '"stm32f37x_pwr.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp "startup_stm32f37x.o" "stm32f37x_it.o" "system_stm32f37x.o" "uart.o" "sdadc.o" "systick.o" "main.o" "stm32f37x_usart.o" "stm32f37x_gpio.o" "stm32f37x_sdadc.o" "stm32f37x_exti.o" "stm32f37x_misc.o" "stm32f37x_rcc.o" "stm32f37x_syscfg.o" "stm32f37x_pwr.o" --library_type=microlib --strict --scatter "sdadc.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\sdadc.map" -o "sdadc.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'sdadc.axf'
+### ADS-LD Command File: 'sdadc.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'sdadc.lnp', Handle=0x00000560
+### Writing '.lnp' file
+### ADS-LD Command file 'sdadc.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

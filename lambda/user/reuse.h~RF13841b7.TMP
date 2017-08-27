@@ -1,0 +1,802 @@
+#ifndef REUSE_H
+#define REUSE_H
+#ifdef __QAC__
+// Deviation for OSEK usage through include of standard osek.h header.
+#pragma PRQA_MESSAGES_OFF 1011
+#endif
+//=============================================================================
+//
+//       COPYRIGHT, 2002, Delphi Technologies, Inc. All Rights reserved
+//
+//       Delphi Confidential
+//
+// ============================================================================
+// %full_filespec:   reuse.h~1:incl:ctc_pt3#9 %
+//
+// created_by:       rskearne
+//
+// date_created:     Thu Mar 23 11:10:25 2006
+//
+// %derived_by:      zzrfyj %
+//
+// %date_modified:        %
+//
+// %version:         1 %
+//
+// ============================================================================
+// @doc
+//
+// @module reuse.h | reuse.h
+//
+// The purpose of this module is to provide common definitions of types for all
+// processor/compiler sets.
+//
+// <nl> Put a brief description here 
+//   This module defines the standard reusable types and functions
+//   common to all reusable software:
+//
+// @normal Copyright <cp> 2002,2006, Delphi Technologies, Inc. All Rights reserved
+//
+// SPECIFICATION REVISION:
+//    IFS_ProjectCompiler.doc-004
+//    INTERNATIONAL STANDARD ©ISO/IEC ISO/IEC 9899:1999 (E) Programming languages-C
+//
+// ============================================================================
+// Configurable Development Software Module:
+// DO NOT MODIFY THIS FILE. It contains no configurable parameters.
+//=============================================================================
+
+//=============================================================================
+// Processor and Compiler types
+//=============================================================================
+// Processor Types
+#ifndef option_M68HC12
+#define option_M68HC12 1
+#endif
+#ifndef option_TC1762
+#define option_TC1762  2
+#endif
+#ifndef option_TC1765
+#define option_TC1765  3
+#endif
+#ifndef option_TC1766
+#define option_TC1766  4
+#endif
+#ifndef option_TC1775
+#define option_TC1775  5
+#endif
+#ifndef option_TC1796
+#define option_TC1796  6
+#endif
+#ifndef option_MPC555
+#define option_MPC555  7
+#endif
+#ifndef option_MPC565
+#define option_MPC565  8
+#endif
+#ifndef option_MPC561
+#define option_MPC561  9
+#endif
+#ifndef option_MPC563
+#define option_MPC563  10
+#endif
+#ifndef option_V850E
+#define option_V850E   11
+#endif
+#ifndef option_78K0
+#define option_78K0    13
+#endif
+#ifndef option_M68HC08
+#define option_M68HC08 14
+#endif
+#ifndef option_C166
+#define option_C166    15
+#endif
+#ifndef option_MPC5534
+#define option_MPC5534 16
+#endif
+#ifndef option_MPC5553
+#define option_MPC5553 17
+#endif
+#ifndef option_MPC5554
+#define option_MPC5554 18
+#endif
+#ifndef option_MPC5565
+#define option_MPC5565 19
+#endif
+#ifndef option_MPC5566
+#define option_MPC5566 20
+#endif
+#ifndef option_SH
+#define option_SH      21
+#endif
+#ifndef option_MPC5567
+#define option_MPC5567 22
+#endif
+#ifndef option_TC1767
+#define option_TC1767 23
+#endif
+#ifndef option_TC1797
+#define option_TC1797 24
+#endif
+#ifndef option_MPC5674F
+#define option_MPC5674F 25
+#endif
+#ifndef option_S12X
+#define option_S12X 26
+#endif
+#ifndef option_XGATE
+#define option_XGATE 27
+#endif
+#ifndef option_MPC5644A
+#define option_MPC5644A 28
+#endif
+#ifndef option_MPC5676R
+#define option_MPC5676R 29
+#endif
+#ifndef option_MPC5604B
+#define option_MPC5604B 30
+#endif
+#ifndef option_WIN32
+#define option_WIN32 31
+#endif
+#ifndef option_MPC563x
+#define option_MPC563x 32
+#endif
+
+
+// Compiler Types
+#ifndef option_COSMIC
+#define option_COSMIC			1
+#endif
+#ifndef option_GREENHILLS
+#define option_GREENHILLS	   2
+#endif
+#ifndef option_TASKING
+#define option_TASKING		   3
+#endif
+#ifndef option_DIABDATA
+#define option_DIABDATA		   4
+#endif
+#ifndef option_NEC
+#define option_NEC  			   5
+#endif
+#ifndef option_TASKING_2_0
+#define option_TASKING_2_0	   6
+#endif
+#ifndef option_TASKING_16BIT
+#define option_TASKING_16BIT	7
+#endif
+#ifndef option_POLYSPACE
+#define option_POLYSPACE   	8
+#endif
+#ifndef option_DIABDATA_5_3
+#define option_DIABDATA_5_3   9
+#endif
+#ifndef option_TI
+#define option_TI            10
+#endif
+#ifndef option_RENESAS
+#define option_RENESAS       11
+#endif
+#ifndef option_MATLAB
+#define option_MATLAB        12
+#endif
+
+//=============================================================================
+// Include Files
+//=============================================================================
+#include "compiler_processor_select.h"
+#include "haldef.h"
+
+//=============================================================================
+// Global Define Constants
+//=============================================================================
+
+//=============================================================================
+// Mask32
+//
+// @func Create a mask given the position and width.
+//
+// @parm uint32_t | in_position | value from 0 to 31
+//
+// @parm uint32_t | in_width | value from 1 to 32
+//
+// @rdesc the mask.
+//
+//=============================================================================
+#define Mask32( in_position, in_width ) \
+   (uint32_t)( ( ( ( ( ( 1UL << ( (uint32_t)(in_width) ) ) ) - 1U ) & UINT32_MAX ) << ( (uint32_t)(in_position) ) ) & UINT32_MAX )
+
+//=============================================================================
+// Mask16
+//
+// @func Create a mask given the position and width.
+//
+// @parm uint32_t | in_position | value from 0 to 15
+//
+// @parm uint32_t | in_width | value from 1 to 16
+//
+// @rdesc the mask.
+//
+//=============================================================================
+#define Mask16( in_position, in_width ) \
+   (uint16_t)( ( (uint16_t)( ( ( ( 1U << (  in_width ) ) ) - 1U ) & UINT16_MAX ) << ( in_position ) ) & UINT16_MAX )
+
+//=============================================================================
+// Mask8
+//
+// @func Create a mask given the position and width.
+//
+// @parm uint32_t | in_position | value from 0 to 7
+//
+// @parm uint32_t | in_width | value from 1 to 8
+//
+// @rdesc the mask.
+//
+//=============================================================================
+#define Mask8( in_position, in_width ) \
+   (uint8_t)( ( (uint8_t)( ( ( 1U << ( in_width ) ) - 1U ) & UINT8_MAX ) << ( in_position ) ) & UINT8_MAX )
+
+//=============================================================================
+// Zero_Bits_Macro8
+//
+// @func Zeros out bits given the position and width.
+//
+// @parm uint8_t | in_value | value to have bits modified
+//
+// @parm uint8_t | in_position | bit position from 0 to 7
+//
+// @parm uint8_t | in_width | number of bits to modify from 1 to 8
+//
+// @rdesc the mask.
+//
+//=============================================================================
+#define Zero_Bits_Macro8( in_value, in_position, in_width ) \
+   (uint8_t)( ~( Mask8( ( in_position ), ( in_width ) ) ) & (uint8_t)( in_value ) )
+
+//=============================================================================
+// Zero_Bits_Macro16
+//
+// @func Zeros out bits given the position and width.
+//
+// @parm uint16_t | in_value | value to have bits modified
+//
+// @parm uint16_t | in_position | bit position from 0 to 15
+//
+// @parm uint16_t | in_width | number of bits to modify from 1 to 16
+//
+// @rdesc the mask.
+//
+//=============================================================================
+#define Zero_Bits_Macro16( in_value, in_position, in_width ) \
+  (uint16_t)( ~( Mask16( ( in_position ), ( in_width ) ) ) & (uint16_t)( in_value ) )
+
+//=============================================================================
+// Zero_Bits_Macro32
+//
+// @func Zeros out bits given the position and width.
+//
+// @parm uint32_t | in_value | value to have bits modified
+//
+// @parm uint32_t | in_position | bit position from 0 to 31
+//
+// @parm uint32_t | in_width | number of bits to modify from 1 to 32
+//
+// @rdesc the mask.
+//
+//=============================================================================
+#define Zero_Bits_Macro32( in_value, in_position, in_width ) \
+   (uint32_t)( ~( Mask32( ( in_position ), ( in_width ) ) ) & (uint32_t)( in_value ) )
+
+//=============================================================================
+// Zero_Bits_Macro
+//
+// @func Zeros out bits given the position and width.
+//
+// @parm uint32_t | in_value | value to have bits modified
+//
+// @parm uint32_t | in_position | bit position from 0 to 31
+//
+// @parm uint32_t | in_width | number of bits to modify from 1 to 32
+//
+// @rdesc the mask.
+//
+//=============================================================================
+#define Zero_Bits_Macro( in_value, in_position, in_width ) \
+   (uint32_t)( ~( Mask32( ( in_position ), ( in_width ) ) ) & (uint32_t)( in_value ) )
+
+//=============================================================================
+// Extract_Bits_Macro16
+//
+// @func Extract bits from a 16 bit value given the position and width.
+//
+// @parm <t uint16_t> | in_value | the 16 bit value to extract the bits from.
+//
+// @parm <t uint16_t> | in_position | value from 0 to 15
+//
+// @parm <t uint16_t> | in_width | value from 1 to 16
+//
+// @rdesc the bits extracted.
+//
+//=============================================================================
+#define Extract_Bits_Macro16( in_value, in_position, in_width ) \
+   ( ( (uint16_t)( in_value ) & Mask16( ( in_position ), ( in_width ) ) ) >> (uint16_t)( in_position ) )
+
+//=============================================================================
+// Extract_Bits_Macro
+//
+// @func Extract bits from a 32 bit value given the position and width.
+//
+// @parm <t uint32_t> | in_value | the 32 bit value to extract the bits from.
+//
+// @parm <t uint32_t> | in_position | value from 0 to 31
+//
+// @parm <t uint32_t> | in_width | value from 1 to 32
+//
+// @rdesc the bits extracted.
+//
+//=============================================================================
+#define Extract_Bits_Macro( in_value, in_position, in_width ) \
+   ( ( (uint32_t)( in_value ) & Mask32( ( in_position ), ( in_width ) ) ) >> (uint32_t)( in_position ) )
+
+//=============================================================================
+// Insert_Bits_Macro16
+//
+// @func Insert bits into a 16 bit value given the position and width.
+//
+// @parm <t uint16_t> | old_value | the 16 bit value to insert the bits into.
+//
+// @parm <t uint16_t> | in_value | the 16 bit value to insert the bits into.
+//
+// @parm <t uint16_t> | in_position | value from 0 to 15
+//
+// @parm <t uint16_t> | in_width | value from 1 to 16
+//
+// @rdesc the new value.
+//
+//=============================================================================
+#define Insert_Bits_Macro16( in_old_value, in_value, in_position, in_width) \
+   ( Zero_Bits_Macro16( in_old_value, ( in_position ), ( in_width ) ) | ( ( (uint16_t)( in_value ) << (uint16_t)( in_position ) ) & Mask16( ( in_position ), ( in_width ) ) ) )
+
+//=============================================================================
+// Insert_Bits_Macro
+//
+// @func Insert bits into a 32 bit value given the position and width.
+//
+// @parm <t uint32_t> | old_value | the 32 bit value to insert the bits into.
+//
+// @parm <t uint32_t> | in_value | the 32 bit value to insert the bits into.
+//
+// @parm <t uint32_t> | in_position | value from 0 to 31
+//
+// @parm <t uint32_t> | in_width | value from 1 to 32
+//
+// @rdesc the new value.
+//
+//=============================================================================
+#define Insert_Bits_Macro( in_old_value, in_value, in_position, in_width) \
+   ( Zero_Bits_Macro( in_old_value, ( in_position ), ( in_width ) ) | ( ( (uint32_t)( in_value ) << (uint32_t)( in_position ) ) & Mask32( ( in_position ), ( in_width ) ) ) )
+
+//=============================================================================
+// Put_Bit_Macro16
+//
+// @func Insert a bit into a 16 bit value given the value, address and position.
+//
+// @parm <t uint16_t> | in_value | the 16 bit value to extract the bits from.
+//
+// @parm <t uint16_t>* | in_address | the address to insert the bits.
+//
+// @parm <t uint16_t> | in_position | value from 0 to 15
+//
+// @rdesc none.
+//
+//=============================================================================
+#define Put_Bit_Macro16( in_value, in_address, in_position ) \
+   ( Zero_Bits_Macro16( *( in_address ), ( in_position ), 1UL ) | ( ( (uint16_t)( in_value ) << (uint16_t)( in_position ) ) & Mask16( ( in_position ), 1UL ) ) )
+
+//=============================================================================
+// Put_Bit_Macro
+//
+// @func Insert a bit into a 32 bit value given the value, address and position.
+//
+// @parm <t uint32_t> | in_value | the 32 bit value to extract the bits from.
+//
+// @parm <t uint32_t>* | in_address | the address to insert the bits.
+//
+// @parm <t uint32_t> | in_position | value from 0 to 31
+//
+// @rdesc none.
+//
+//=============================================================================
+#define Put_Bit_Macro( in_value, in_address, in_position ) \
+   ( Zero_Bits_Macro( *( in_address ), ( in_position ), 1UL ) | ( ( (uint32_t)( in_value ) << (uint32_t)( in_position ) ) & Mask32( ( in_position ), 1UL ) ) )
+
+//=============================================================================
+// Put_Bits_Macro
+//
+// @func Insert bits into a 32 bit value given the value, address, position and width.
+//
+// @parm <t uint32_t> | in_value | the 32 bit value to extract the bits from.
+//
+// @parm <t uint32_t>* | in_address | the address to insert the bits.
+//
+// @parm <t uint32_t> | in_position | value from 0 to 31
+//
+// @parm <t uint32_t> | in_width | value from 1 to 32
+//
+// @rdesc none.
+//
+//=============================================================================
+#define Put_Bits_Macro( in_value, in_address, in_position, in_width ) \
+   ( Zero_Bits_Macro( *( in_address ), ( in_position ), (in_width) ) | ( ( (uint32_t)( in_value ) << (uint32_t)( in_position ) ) & Mask32( ( in_position ), (in_width) ) ) )
+
+
+//=============================================================================
+// Is config_CPU_Type option_M68HC12 and Using option_COSMIC Compiler
+//=============================================================================
+#if ( ( config_CPU_Type == option_M68HC12 ) \
+      && ( config_Compiler_Vendor == option_COSMIC )  ) 
+
+#if defined (PARSE_ANSI_ONLY)
+#include "m68hc12_cosmic_ansic.h"
+#else
+#include "m68hc12_cosmic.h"
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_TC1765 and Using option_GREENHILLS Compiler
+//=============================================================================
+#elif ( ( config_CPU_Type == option_TC1762 ) || \
+        ( config_CPU_Type == option_TC1765 ) || \
+        ( config_CPU_Type == option_TC1766 ) || \
+        ( config_CPU_Type == option_TC1775 ) || \
+        ( config_CPU_Type == option_TC1796 ) || \
+        ( config_CPU_Type == option_TC1797 ) || \
+        ( config_CPU_Type == option_TC1767 ) ) 
+
+#if   ( ( config_Compiler_Vendor == option_TASKING     ) || \
+        ( config_Compiler_Vendor == option_TASKING_2_0 ) )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "tricore_tasking_ansic.h"
+#else
+#include "tricore_tasking.h"
+#endif
+#else
+#error Compiler Not Supported for TriCore family in reuse.h
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_C166 and Using config_Compiler_Vendor option_TASKING_16BIT
+//=============================================================================
+#elif ( config_CPU_Type == option_C166 )
+
+#if     ( config_Compiler_Vendor == option_TASKING_16BIT )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "xc16x_tasking_ansic.h"
+#else
+#include "xc16x_tasking.h"
+#endif
+
+#else
+#error Compiler Not Supported for XC16x family in reuse.h
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_MPC5500 and Using option_DIABDATA or option_DIABDATA_5_3 Compiler
+//=============================================================================
+#elif ( ( config_CPU_Type == option_MPC5534 ) || \
+        ( config_CPU_Type == option_MPC5553 ) || \
+        ( config_CPU_Type == option_MPC5554 ) || \
+        ( config_CPU_Type == option_MPC5565 ) || \
+        ( config_CPU_Type == option_MPC5566 ) || \
+        ( config_CPU_Type == option_MPC5674F ) || \
+        ( config_CPU_Type == option_MPC5644A ) || \
+        ( config_CPU_Type == option_MPC5676R ) || \
+        ( config_CPU_Type == option_MPC5604B ) || \
+        ( config_CPU_Type == option_MPC563x ) || \
+        ( config_CPU_Type == option_MPC5567 ) )
+
+#if     ( config_Compiler_Vendor == option_DIABDATA )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "powerpc_diabdata_ansic.h"
+#else
+#include "powerpc_diabdata.h"
+#endif
+
+#elif   ( config_Compiler_Vendor == option_DIABDATA_5_3 )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "esys_diabdata_ansic.h"
+#else
+#include "esys_diabdata.h"
+#endif
+
+#elif   ( config_Compiler_Vendor == option_GREENHILLS )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "esys_greenhills_ansic.h"
+#else
+#include "esys_greenhills.h"
+#endif
+
+
+#else
+#error Compiler Not Supported for MPC5500 family in reuse.h
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_MPC500 and Using option_DIABDATA Compiler
+//=============================================================================
+#elif ( ( config_CPU_Type == option_MPC561 ) || \
+        ( config_CPU_Type == option_MPC563 ) || \
+        ( config_CPU_Type == option_MPC565 ) || \
+        ( config_CPU_Type == option_MPC555 ) )
+
+#if     ( config_Compiler_Vendor == option_DIABDATA )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "powerpc_diabdata_ansic.h"
+#else
+#include "powerpc_diabdata.h"
+#endif
+
+#else
+#error Compiler Not Supported for MPC550 family in reuse.h
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_CPU32X and Using option_DIABDATA Compiler
+//=============================================================================
+#elif ( config_CPU_Type == option_MC68377 )
+
+#if     ( config_Compiler_Vendor == option_DIABDATA )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "cpu32x_diabdata_ansic.h"
+#else
+#include "cpu32x_diabdata.h"
+#endif
+
+#else
+#error Compiler Not Supported for MC68300 family in reuse.h
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_SH and Using option_GREENHILLS or option_RENESAS Compiler
+//=============================================================================
+#elif ( config_CPU_Type == option_SH ) 
+
+#if     ( config_Compiler_Vendor == option_RENESAS )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "sh_renesas_ansic.h"
+#else
+#include "sh_renesas.h"
+#endif
+
+#elif   ( config_Compiler_Vendor == option_GREENHILLS )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "sh_greenhills_ansic.h"
+#else
+#include "sh_greenhills.h"
+#endif
+
+#else
+#error Compiler Not Supported for SH family in reuse.h
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_S12X and Using option_COSMIC Compiler
+//=============================================================================
+#elif ( config_CPU_Type == option_S12X )
+
+#if     ( config_Compiler_Vendor == option_COSMIC )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "s12x_cosmic_ansic.h"
+#else
+#include "s12x_cosmic.h"
+#endif
+
+#else
+#error Compiler Not Supported for S12X family in reuse.h
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_XGATE and Using option_COSMIC Compiler
+//=============================================================================
+#elif ( config_CPU_Type == option_XGATE )
+
+#if     ( config_Compiler_Vendor == option_COSMIC )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "xgate_cosmic_ansic.h"
+#else
+#include "xgate_cosmic.h"
+#endif
+
+#else
+#error Compiler Not Supported for S12X family in reuse.h
+#endif
+
+//=============================================================================
+// Is config_CPU_Type option_WIN32 and Using option_MATLAB Compiler
+//=============================================================================
+#elif ( config_CPU_Type == option_WIN32 )
+
+#if     ( config_Compiler_Vendor == option_MATLAB )
+
+#if defined (PARSE_ANSI_ONLY)
+#include "win32_matlab_ansic.h"
+#else
+#include "win32_matlab.h"
+#endif
+
+#else
+#error Compiler Not Supported for WIN32 family in reuse.h
+#endif
+
+//=============================================================================
+// config_CPU_Type and/or Compiler not supported
+//=============================================================================
+#else 
+
+#error CPU Not Supported in reuse.h
+
+#endif
+
+//=============================================================================
+// /------------------------------------------------------------------------
+// |                 Standard Preprocessor Definitions
+// \------------------------------------------------------------------------
+// ============================================================================
+// StandardPreprocessor Definitions are placed here to allow specific
+// compiler/processor choices to override the defaults.
+//=============================================================================
+
+//per 7.18 of the ANSI/ISO Standard
+#ifndef UINT8_MIN
+#define UINT8_MIN      (0)             // Minimum value for uint8_t
+#endif
+#ifndef UINT8_MAX
+#define UINT8_MAX      (0xffU)         // Maximum value for uint8_t
+#endif
+
+#ifndef UINT16_MIN
+#define UINT16_MIN     (0)             // Minimum value for uint16_t
+#endif
+#ifndef UINT16_MAX
+#define UINT16_MAX     (0xffffU)       // Maximum value for uint16_t
+#endif
+
+#ifndef UINT24_MIN
+#define UINT24_MIN     (0)             // Minimum value for uint32_t containing 24 bits
+#endif
+#ifndef UINT24_MAX
+#define UINT24_MAX     (0x00ffffffU)   // Maximum value for uint32_t containing 24 bits
+#endif
+
+#ifndef UINT32_MIN
+#define UINT32_MIN     (0)             // Minimum value for uint32_t
+#endif
+#ifndef UINT32_MAX
+#define UINT32_MAX     (0xffffffffU)   // Maximum value for uint32_t
+#endif
+
+
+#ifndef INT8_MIN
+#define INT8_MIN      (-INT8_MAX-1)    // Minimum value for int8_t
+#endif
+#ifndef INT8_MAX
+#define INT8_MAX      (127)            // Maximum value for int8_t
+#endif
+
+#ifndef INT16_MIN
+#define INT16_MIN     (-INT16_MAX-1)   // Minimum value for int16_t
+#endif
+#ifndef INT16_MAX
+#define INT16_MAX     (32767)          // Maximum value for int16_t
+#endif
+
+#ifndef INT24_MIN
+#define INT24_MIN     (-INT24_MAX-1)   // Minimum value for int32_t containing 24 bits
+#endif
+#ifndef INT24_MAX
+#define INT24_MAX     (8388607)        // Maximum value for int32_t containing 24 bits
+#endif
+
+#ifndef INT32_MIN
+#define INT32_MIN     (-INT32_MAX-1)   // Minimum value for int32_t
+#endif
+#ifndef INT32_MAX
+#define INT32_MAX     (2147483647)     // Maximum value for int32_t
+#endif
+
+#ifndef SIG_ATOMIC_SIZE
+#define SIG_ATOMIC_SIZE    (8*sizeof(sig_atomic_t))
+#endif
+#ifndef SIG_ATOMIC_MIN
+#define SIG_ATOMIC_MIN     UINT8_MIN
+#endif
+#ifndef SIG_ATOMIC_MAX
+#define SIG_ATOMIC_MAX     UINT8_MAX
+#endif
+
+
+//
+// Max function.
+//
+#ifndef Max
+#define Max(a,b) ( ( (a)>(b) )?(a):(b) ) 
+#endif
+
+//
+// Min function.
+//
+#ifndef Min
+#define Min(a,b) ( ( (a)<(b) )?(a):(b) ) 
+#endif
+
+#ifndef BIT_T
+#define BIT_T
+//
+// @enum Bit_T | Defines the position of the bits
+//
+typedef enum
+{
+   BIT_0,   // @emem Bit Position  0
+   BIT_1,   // @emem Bit Position  1
+   BIT_2,   // @emem Bit Position  2
+   BIT_3,   // @emem Bit Position  3
+   BIT_4,   // @emem Bit Position  4
+   BIT_5,   // @emem Bit Position  5
+   BIT_6,   // @emem Bit Position  6
+   BIT_7,   // @emem Bit Position  7
+   BIT_8,   // @emem Bit Position  8
+   BIT_9,   // @emem Bit Position  9
+   BIT_10,  // @emem Bit Position 10
+   BIT_11,  // @emem Bit Position 11
+   BIT_12,  // @emem Bit Position 12
+   BIT_13,  // @emem Bit Position 13
+   BIT_14,  // @emem Bit Position 14
+   BIT_15,  // @emem Bit Position 15
+   BIT_16,  // @emem Bit Position 16
+   BIT_17,  // @emem Bit Position 17
+   BIT_18,  // @emem Bit Position 18
+   BIT_19,  // @emem Bit Position 19
+   BIT_20,  // @emem Bit Position 20
+   BIT_21,  // @emem Bit Position 21
+   BIT_22,  // @emem Bit Position 22
+   BIT_23,  // @emem Bit Position 23
+   BIT_24,  // @emem Bit Position 24
+   BIT_25,  // @emem Bit Position 25
+   BIT_26,  // @emem Bit Position 26
+   BIT_27,  // @emem Bit Position 27
+   BIT_28,  // @emem Bit Position 28
+   BIT_29,  // @emem Bit Position 29
+   BIT_30,  // @emem Bit Position 30
+   BIT_31,  // @emem Bit Position 31
+   BIT_MAX  // @emem 32 Bits
+
+} bit_t;
+
+#endif
+
+#define Cast_bitfield32(x) ((bitfield32_t)(x))
+#define Cast_bitfield16(x) ((bitfield16_t)(x))
+#define Cast_bitfield8(x)  ( (bitfield8_t)(x))
+
+#define Cast_uint8(x)          ( (uint8_t)(x))
+#define Cast_uint16(x)         ((uint16_t)(x))
+#define Cast_uint32(x)         ((uint32_t)(x))
+
+#define Cast_int8(x)            ( (int8_t)(x))
+#define Cast_int16(x)           ((int16_t)(x))
+#define Cast_int32(x)           ((int32_t)(x))
+
+#endif // REUSE_H

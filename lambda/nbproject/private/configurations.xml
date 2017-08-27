@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="drive">
+        <in>SysTick.h</in>
+        <in>adxl345.c</in>
+        <in>adxl345.h</in>
+        <in>ascii.h</in>
+        <in>exit.c</in>
+        <in>exit.h</in>
+        <in>fatapp.c</in>
+        <in>fatapp.h</in>
+        <in>gui.c</in>
+        <in>gui.h</in>
+        <in>i2c_eeprom.c</in>
+        <in>i2c_eeprom.h</in>
+        <in>ili9328.c</in>
+        <in>ili9328.h</in>
+        <in>key.c</in>
+        <in>key.h</in>
+        <in>led.c</in>
+        <in>led.h</in>
+        <in>sd.c</in>
+        <in>sd.h</in>
+        <in>sdadc.c</in>
+        <in>sdadc.h</in>
+        <in>systick.c</in>
+        <in>uart.c</in>
+        <in>uart.h</in>
+        <in>w25x16.c</in>
+        <in>w25x16.h</in>
+        <in>xpt2046.c</in>
+        <in>xpt2046.h</in>
+      </df>
+      <df name="lib">
+        <df name="inc">
+          <in>core_cm4.h</in>
+          <in>core_cm4_simd.h</in>
+          <in>core_cmFunc.h</in>
+          <in>core_cmInstr.h</in>
+          <in>reuse.h</in>
+          <in>stm32f37x.h</in>
+          <in>stm32f37x_adc.h</in>
+          <in>stm32f37x_can.h</in>
+          <in>stm32f37x_cec.h</in>
+          <in>stm32f37x_comp.h</in>
+          <in>stm32f37x_crc.h</in>
+          <in>stm32f37x_dac.h</in>
+          <in>stm32f37x_dbgmcu.h</in>
+          <in>stm32f37x_dma.h</in>
+          <in>stm32f37x_exti.h</in>
+          <in>stm32f37x_flash.h</in>
+          <in>stm32f37x_gpio.h</in>
+          <in>stm32f37x_i2c.h</in>
+          <in>stm32f37x_iwdg.h</in>
+          <in>stm32f37x_misc.h</in>
+          <in>stm32f37x_pwr.h</in>
+          <in>stm32f37x_rcc.h</in>
+          <in>stm32f37x_rtc.h</in>
+          <in>stm32f37x_sdadc.h</in>
+          <in>stm32f37x_spi.h</in>
+          <in>stm32f37x_syscfg.h</in>
+          <in>stm32f37x_tim.h</in>
+          <in>stm32f37x_usart.h</in>
+          <in>stm32f37x_wwdg.h</in>
+        </df>
+        <df name="src">
+          <in>stm32f37x_adc.c</in>
+          <in>stm32f37x_can.c</in>
+          <in>stm32f37x_cec.c</in>
+          <in>stm32f37x_comp.c</in>
+          <in>stm32f37x_crc.c</in>
+          <in>stm32f37x_dac.c</in>
+          <in>stm32f37x_dbgmcu.c</in>
+          <in>stm32f37x_dma.c</in>
+          <in>stm32f37x_exti.c</in>
+          <in>stm32f37x_flash.c</in>
+          <in>stm32f37x_gpio.c</in>
+          <in>stm32f37x_i2c.c</in>
+          <in>stm32f37x_iwdg.c</in>
+          <in>stm32f37x_misc.c</in>
+          <in>stm32f37x_pwr.c</in>
+          <in>stm32f37x_rcc.c</in>
+          <in>stm32f37x_rtc.c</in>
+          <in>stm32f37x_sdadc.c</in>
+          <in>stm32f37x_spi.c</in>
+          <in>stm32f37x_syscfg.c</in>
+          <in>stm32f37x_tim.c</in>
+          <in>stm32f37x_usart.c</in>
+          <in>stm32f37x_wwdg.c</in>
+        </df>
+      </df>
+      <df name="Libraries">
+        <df name="CMSIS">
+          <df name="Core">
+            <df name="CM3">
+              <df name="startup">
+                <df name="arm">
+                  <in>startup_stm32f10x_cl.s</in>
+                  <in>startup_stm32f10x_hd.s</in>
+                  <in>startup_stm32f10x_ld.s</in>
+                  <in>startup_stm32f10x_md.s</in>
+                </df>
+                <df name="gcc">
+                  <in>startup_stm32f10x_cl.s</in>
+                  <in>startup_stm32f10x_hd.s</in>
+                  <in>startup_stm32f10x_ld.s</in>
+                  <in>startup_stm32f10x_md.s</in>
+                </df>
+                <df name="iar">
+                  <in>startup_stm32f10x_cl.s</in>
+                  <in>startup_stm32f10x_hd.s</in>
+                  <in>startup_stm32f10x_ld.s</in>
+                  <in>startup_stm32f10x_md.s</in>
+                </df>
+              </df>
+              <in>core_cm3.c</in>
+              <in>core_cm3.h</in>
+              <in>stm32f10x.h</in>
+              <in>system_stm32f10x.c</in>
+              <in>system_stm32f10x.h</in>
+            </df>
+            <df name="Documentation">
+            </df>
+          </df>
+        </df>
+        <df name="STM32F10x_StdPeriph_Driver">
+          <df name="inc">
+            <in>misc.h</in>
+            <in>stm32f10x_adc.h</in>
+            <in>stm32f10x_bkp.h</in>
+            <in>stm32f10x_can.h</in>
+            <in>stm32f10x_crc.h</in>
+            <in>stm32f10x_dac.h</in>
+            <in>stm32f10x_dbgmcu.h</in>
+            <in>stm32f10x_dma.h</in>
+            <in>stm32f10x_exti.h</in>
+            <in>stm32f10x_flash.h</in>
+            <in>stm32f10x_fsmc.h</in>
+            <in>stm32f10x_gpio.h</in>
+            <in>stm32f10x_i2c.h</in>
+            <in>stm32f10x_iwdg.h</in>
+            <in>stm32f10x_pwr.h</in>
+            <in>stm32f10x_rcc.h</in>
+            <in>stm32f10x_rtc.h</in>
+            <in>stm32f10x_sdio.h</in>
+            <in>stm32f10x_spi.h</in>
+            <in>stm32f10x_tim.h</in>
+            <in>stm32f10x_usart.h</in>
+            <in>stm32f10x_wwdg.h</in>
+          </df>
+          <df name="src">
+            <in>misc.c</in>
+            <in>stm32f10x_adc.c</in>
+            <in>stm32f10x_bkp.c</in>
+            <in>stm32f10x_can.c</in>
+            <in>stm32f10x_crc.c</in>
+            <in>stm32f10x_dac.c</in>
+            <in>stm32f10x_dbgmcu.c</in>
+            <in>stm32f10x_dma.c</in>
+            <in>stm32f10x_exti.c</in>
+            <in>stm32f10x_flash.c</in>
+            <in>stm32f10x_fsmc.c</in>
+            <in>stm32f10x_gpio.c</in>
+            <in>stm32f10x_i2c.c</in>
+            <in>stm32f10x_iwdg.c</in>
+            <in>stm32f10x_pwr.c</in>
+            <in>stm32f10x_rcc.c</in>
+            <in>stm32f10x_rtc.c</in>
+            <in>stm32f10x_sdio.c</in>
+            <in>stm32f10x_spi.c</in>
+            <in>stm32f10x_tim.c</in>
+            <in>stm32f10x_usart.c</in>
+            <in>stm32f10x_wwdg.c</in>
+          </df>
+        </df>
+      </df>
+      <df name="Listings">
+      </df>
+      <df name="Objects">
+      </df>
+      <df name="stm32f3">
+        <in>stm32f30x_conf.h</in>
+        <in>stm32f30x_it.c</in>
+        <in>stm32f30x_it.h</in>
+        <in>stm32f37x_conf.h</in>
+        <in>stm32f37x_it.c</in>
+        <in>stm32f37x_it.h</in>
+        <in>system_stm32f30x.c</in>
+        <in>system_stm32f37x.c</in>
+      </df>
+      <df name="user">
+        <df name="APP">
+          <in>APP_can.c</in>
+          <in>APP_can.h</in>
+          <in>LUX_math.h</in>
+          <in>LUX_types.h</in>
+          <in>can_xfer.c</in>
+          <in>can_xfer.h</in>
+          <in>dd_can.c</in>
+          <in>dd_can.h</in>
+          <in>initialize.c</in>
+          <in>initialize.h</in>
+          <in>interrupt.c</in>
+        </df>
+        <df name="CCP">
+          <in>ccp2conf.c</in>
+          <in>ccp2conf.h</in>
+          <in>ccp2daq.c</in>
+          <in>ccp2daq.h</in>
+          <in>ccp2main.c</in>
+          <in>ccp2main.h</in>
+          <in>ccp2mem.c</in>
+          <in>ccp2mem.h</in>
+          <in>ccp2mode.c</in>
+          <in>ccp2mode.h</in>
+          <in>ccp2nvmd.c</in>
+          <in>ccp2nvmd.h</in>
+          <in>ccp2session_nvm.c</in>
+        </df>
+        <df name="io_config">
+          <in>io_analog_config.h</in>
+          <in>io_can_config.c</in>
+          <in>io_can_config.h</in>
+          <in>io_config.h</in>
+        </df>
+        <in>D.s</in>
+        <in>adc.c</in>
+        <in>adc.h</in>
+        <in>can.c</in>
+        <in>lamuda.c</in>
+        <in>lamuda.h</in>
+        <in>main.c</in>
+        <in>modbus.c</in>
+        <in>reuse.h</in>
+        <in>startup_stm32f37x.s</in>
+        <in>t_gentypes.h</in>
+      </df>
+      <df name="Utilities">
+        <df name="STM32_EVAL">
+          <df name="STM3210B_EVAL">
+            <in>stm3210b_eval.h</in>
+            <in>stm3210b_eval_lcd.c</in>
+            <in>stm3210b_eval_lcd.h</in>
+          </df>
+          <df name="STM3210C_EVAL">
+            <in>Retarget.c</in>
+            <in>stm3210c_eval.h</in>
+            <in>stm3210c_eval_ioe.c</in>
+            <in>stm3210c_eval_ioe.h</in>
+            <in>stm3210c_eval_lcd.c</in>
+            <in>stm3210c_eval_lcd.h</in>
+          </df>
+          <df name="STM3210E_EVAL">
+            <in>stm3210e_eval.h</in>
+            <in>stm3210e_eval_lcd.c</in>
+            <in>stm3210e_eval_lcd.h</in>
+          </df>
+          <in>fonts.h</in>
+          <in>stm32_eval.c</in>
+          <in>stm32_eval.h</in>
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,313 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jian Delphi, Delphi, LIC=TIVPC-783L0-PC5J8-3M9GH-DQA64-FC0SK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  d:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\mazong\sawmachine\user\sawmachine.uvprojx
+Project File Date:  06/25/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+reuse.h(65): warning:  #47-D: incompatible redefinition of macro "NULL" (declared at line 61 of "d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h")
+  #define NULL  ( (void*) 0 )
+main.c(52): warning:  #69-D: integer conversion resulted in truncation
+  uint16_t  VcErrorCount, SDADC1_DR_Address = 0x20000;
+main.c(149): warning:  #1295-D: Deprecated declaration Setio_Pump_On - give arg types
+  void Setio_Pump_On();
+main.c(150): warning:  #1295-D: Deprecated declaration Setio_Pump_Off - give arg types
+  void Setio_Pump_Off();
+main.c(151): warning:  #1295-D: Deprecated declaration Setio_SawWheel_On - give arg types
+  void Setio_SawWheel_On();
+main.c(152): warning:  #1295-D: Deprecated declaration Setio_SawWheel_Off - give arg types
+  void Setio_SawWheel_Off();
+main.c(153): warning:  #1295-D: Deprecated declaration Setio_W_FEED_On - give arg types
+  void Setio_W_FEED_On();
+main.c(154): warning:  #1295-D: Deprecated declaration Setio_W_FEED_Off - give arg types
+  void Setio_W_FEED_Off();
+main.c(155): warning:  #1295-D: Deprecated declaration Setio_B_RETREAT_On - give arg types
+  void Setio_B_RETREAT_On();
+main.c(156): warning:  #1295-D: Deprecated declaration Setio_B_RETREAT_Off - give arg types
+  void Setio_B_RETREAT_Off();
+main.c(157): warning:  #1295-D: Deprecated declaration Setio_B_FEED_On - give arg types
+  void Setio_B_FEED_On();
+main.c(158): warning:  #1295-D: Deprecated declaration Setio_B_FEED_Off - give arg types
+  void Setio_B_FEED_Off();
+main.c(159): warning:  #1295-D: Deprecated declaration Setio_Fast_B_FEED_On - give arg types
+  void Setio_Fast_B_FEED_On();
+main.c(160): warning:  #1295-D: Deprecated declaration Setio_Fast_B_FEED_Off - give arg types
+  void Setio_Fast_B_FEED_Off();
+main.c(161): warning:  #1295-D: Deprecated declaration Setio_W_RETREAT_On - give arg types
+  void Setio_W_RETREAT_On();
+main.c(162): warning:  #1295-D: Deprecated declaration Setio_W_RETREAT_Off - give arg types
+  void Setio_W_RETREAT_Off();
+main.c(163): warning:  #1295-D: Deprecated declaration Setio_Slow_W_RETREAT_On - give arg types
+  void Setio_Slow_W_RETREAT_On();
+main.c(164): warning:  #1295-D: Deprecated declaration Setio_Slow_W_RETREAT_Off - give arg types
+  void Setio_Slow_W_RETREAT_Off();
+main.c(165): warning:  #1295-D: Deprecated declaration Setio_FrontVLC_Loosen_On - give arg types
+  void Setio_FrontVLC_Loosen_On();
+main.c(166): warning:  #1295-D: Deprecated declaration Setio_FrontVLC_Loosen_Off - give arg types
+  void Setio_FrontVLC_Loosen_Off();
+main.c(167): warning:  #1295-D: Deprecated declaration Setio_BACKVLC_Loosen_On - give arg types
+  void Setio_BACKVLC_Loosen_On();
+main.c(168): warning:  #1295-D: Deprecated declaration Setio_BACKVLC_Loosen_Off - give arg types
+  void Setio_BACKVLC_Loosen_Off();
+main.c(169): warning:  #1295-D: Deprecated declaration Setio_FrontVLC_Clamp_On - give arg types
+  void Setio_FrontVLC_Clamp_On();
+main.c(170): warning:  #1295-D: Deprecated declaration Setio_FrontVLC_Clamp_Off - give arg types
+  void Setio_FrontVLC_Clamp_Off();
+main.c(171): warning:  #1295-D: Deprecated declaration Setio_BACKVLC_Clamp_On - give arg types
+  void Setio_BACKVLC_Clamp_On();
+main.c(172): warning:  #1295-D: Deprecated declaration Setio_BACKVLC_Clamp_Off - give arg types
+  void Setio_BACKVLC_Clamp_Off();
+main.c(227): warning:  #188-D: enumerated type mixed with another type
+           SbSwitch_OnOff = 0;
+main.c(249): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOB,  GPIO_Pin_2, ENABLE);
+main.c(250): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOD,  GPIO_Pin_8, ENABLE);
+main.c(254): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOB,  GPIO_Pin_2, ENABLE);
+main.c(255): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOD,  GPIO_Pin_8, DISABLE);
+main.c(260): warning:  #188-D: enumerated type mixed with another type
+                    GPIO_WriteBit(GPIOB,  GPIO_Pin_2, DISABLE);
+main.c(261): warning:  #188-D: enumerated type mixed with another type
+                    GPIO_WriteBit(GPIOD,  GPIO_Pin_8, DISABLE);
+main.c(286): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOA,GPIO_Pin_2, SbSwitch_OnOff);
+main.c(291): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOE,GPIO_Pin_4, SbSwitch_OnOff);
+main.c(294): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOD,GPIO_Pin_13, SbSwitch_OnOff);
+main.c(297): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOA,GPIO_Pin_0, SbSwitch_OnOff);
+main.c(300): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOD,GPIO_Pin_14, SbSwitch_OnOff);
+main.c(303): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOE,GPIO_Pin_15, SbSwitch_OnOff);
+main.c(304): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOD,GPIO_Pin_14, SbSwitch_OnOff);
+main.c(307): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOA,GPIO_Pin_1, SbSwitch_OnOff);
+main.c(310): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOA,GPIO_Pin_1, SbSwitch_OnOff);
+main.c(311): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOD,GPIO_Pin_12, SbSwitch_OnOff);
+main.c(314): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOE,GPIO_Pin_14, SbSwitch_OnOff);
+main.c(317): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOE,GPIO_Pin_13, SbSwitch_OnOff);
+main.c(320): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOE,GPIO_Pin_2, SbSwitch_OnOff);
+main.c(323): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOE,GPIO_Pin_3, SbSwitch_OnOff);
+main.c(326): warning:  #188-D: enumerated type mixed with another type
+                          GPIO_WriteBit(GPIOA,GPIO_Pin_2, DISABLE);
+main.c(340): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp = UW * 1024 -455.4;
+main.c(341): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp = Vftemp * 0.05 + Vftemp_pre * 0.95;
+main.c(341): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp = Vftemp * 0.05 + Vftemp_pre * 0.95;
+main.c(342): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp_test = UR * 1115.5 -708 + Vftemp;
+main.c(343): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp_test = Vftemp_test * 0.05 + Vftemp_test_pre * 0.95;
+main.c(343): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp_test = Vftemp_test * 0.05 + Vftemp_test_pre * 0.95;
+main.c(344): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp_test1 = UA * 1115.5 -708 + Vftemp;
+main.c(345): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp_test1 = Vftemp_test1 * 0.05 + Vftemp_test1_pre * 0.95;
+main.c(345): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              Vftemp_test1 = Vftemp_test1 * 0.05 + Vftemp_test1_pre * 0.95;
+main.c(186): warning:  #177-D: variable "canbuf" was declared but never referenced
+     u8 canbuf[8];
+main.c(187): warning:  #177-D: variable "res" was declared but never referenced
+     u8 res;
+main.c(188): warning:  #177-D: variable "key" was declared but never referenced
+     u8 key;
+main.c(189): warning:  #177-D: variable "i" was declared but never referenced
+     u8 i, offset, address_eep, j;
+main.c(189): warning:  #177-D: variable "offset" was declared but never referenced
+     u8 i, offset, address_eep, j;
+main.c(189): warning:  #177-D: variable "address_eep" was declared but never referenced
+     u8 i, offset, address_eep, j;
+main.c(189): warning:  #177-D: variable "j" was declared but never referenced
+     u8 i, offset, address_eep, j;
+main.c(190): warning:  #177-D: variable "checksum" was declared but never referenced
+     u16 checksum;
+main.c(193): warning:  #177-D: variable "status" was declared but never referenced
+      TestStatus status;       
+main.c(194): warning:  #177-D: variable "ADC1ConvertedValue" was declared but never referenced
+         uint16_t  ADC1ConvertedValue = 0;
+main.c(447): warning:  #223-D: function "CAN1_Send_Msg" declared implicitly
+      CAN1_Send_Msg(0x4, TxMessage);//·¢ËÍ8¸ö×Ö½Ú 
+main.c(454): warning:  #188-D: enumerated type mixed with another type
+        SbSwitch_OnOff = (Rxmessage10[2] & 0x01);
+main.c(455): warning:  #188-D: enumerated type mixed with another type
+        Vbauto_action = (Rxmessage10[2] & 0x80) / 0x80;
+main.c(456): warning:  #188-D: enumerated type mixed with another type
+        Vbmachine_reset = (Rxmessage10[2] & 0x40) / 0x40;
+main.c(457): warning:  #188-D: enumerated type mixed with another type
+        VbAuto_Start = (Rxmessage10[2] & 0x20) / 0x20;
+main.c(458): warning:  #188-D: enumerated type mixed with another type
+        VbAuto_Stop = (Rxmessage10[2] & 0x10) / 0x10;
+main.c(459): warning:  #188-D: enumerated type mixed with another type
+        Vbmachine_Stop = (Rxmessage10[2] & 0x8) / 0x8;
+main.c(465): warning:  #188-D: enumerated type mixed with another type
+        Vbmuryo_Check = (( RxMessage1[0] & 0x80)  == 0x80);
+main.c(466): warning:  #188-D: enumerated type mixed with another type
+        Vbtapebreak_Check = (( RxMessage1[0] & 0x40)  == 0x40);
+main.c(467): warning:  #188-D: enumerated type mixed with another type
+        Vbauto_stop_alarm =  (( RxMessage1[0] & 0x20)  == 0x20);
+main.c(468): warning:  #188-D: enumerated type mixed with another type
+        VbPoint_abnormal =  (( RxMessage1[0] & 0x10)  == 0x10);
+main.c(469): warning:  #188-D: enumerated type mixed with another type
+        VbHigh_limit_abn =  (( RxMessage1[0] & 0x8)  == 0x8); 
+main.c(470): warning:  #188-D: enumerated type mixed with another type
+        VbLow_limit_abn  =  (( RxMessage1[0] & 0x4)  == 0x4); 
+main.c(471): warning:  #188-D: enumerated type mixed with another type
+        VbHigh_limit_lost  =  (( RxMessage1[0] & 0x2)  == 0x2); 
+main.c(472): warning:  #188-D: enumerated type mixed with another type
+        VbBuffer_overlength   =  (( RxMessage1[0] & 0x1)  == 0x1); 
+main.c(473): warning:  #188-D: enumerated type mixed with another type
+        VbCount_reverse = (( RxMessage1[1] & 0x80)  == 0x80);
+main.c(474): warning:  #188-D: enumerated type mixed with another type
+        VbCount_abnormal = (( RxMessage1[1] & 0x40)  == 0x40);
+main.c(541): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOE,GPIO_Pin_15, ENABLE);
+main.c(542): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOD,GPIO_Pin_13, ENABLE);
+main.c(546): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOE,GPIO_Pin_15, DISABLE);
+main.c(547): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOD,GPIO_Pin_13, DISABLE);
+main.c(607): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOE,GPIO_Pin_15, ENABLE);
+main.c(608): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOA,GPIO_Pin_1, ENABLE);
+main.c(612): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOE,GPIO_Pin_15, DISABLE);
+main.c(613): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOA,GPIO_Pin_1, DISABLE);
+main.c(634): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOE, GPIO_Pin_15, DISABLE);
+main.c(635): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOD, GPIO_Pin_14, DISABLE);
+main.c(636): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOA, GPIO_Pin_0, DISABLE);
+main.c(637): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOE, GPIO_Pin_2, DISABLE);
+main.c(638): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOE, GPIO_Pin_14, DISABLE);
+main.c(639): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOD, GPIO_Pin_13, DISABLE);
+main.c(640): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOA, GPIO_Pin_1, DISABLE);
+main.c(641): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOE, GPIO_Pin_3, DISABLE);
+main.c(642): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOE, GPIO_Pin_13, DISABLE);
+main.c(643): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOD, GPIO_Pin_12, DISABLE);
+main.c(644): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOA, GPIO_Pin_2, DISABLE);
+main.c(645): warning:  #188-D: enumerated type mixed with another type
+     GPIO_WriteBit(GPIOE, GPIO_Pin_4, DISABLE);
+main.c(1110): warning:  #177-D: variable "temp" was declared but never referenced
+        u8 temp;
+main.c(1367): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(GPIOA,GPIO_Pin_2, ENABLE);
+main.c(1371): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(GPIOA,GPIO_Pin_2, DISABLE);
+main.c(1375): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(GPIOE,GPIO_Pin_4, ENABLE);
+main.c(1379): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(GPIOE,GPIO_Pin_4, DISABLE);
+main.c(1383): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(GPIOD,GPIO_Pin_13, ENABLE);
+main.c(1387): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(GPIOD,GPIO_Pin_13, DISABLE);
+main.c(1391): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(GPIOA,GPIO_Pin_0, ENABLE);
+main.c(1395): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(GPIOA,GPIO_Pin_0, DISABLE);
+main.c(1399): warning:  #188-D: enumerated type mixed with another type
+       GPIO_WriteBit(GPIOD,GPIO_Pin_14, ENABLE);
+main.c(1403): warning:  #188-D: enumerated type mixed with another type
+       GPIO_WriteBit(GPIOD,GPIO_Pin_14, DISABLE);
+main.c(1407): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE,GPIO_Pin_15, ENABLE);
+main.c(1408): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD,GPIO_Pin_14, ENABLE);
+main.c(1412): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE,GPIO_Pin_15, DISABLE);
+main.c(1413): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD,GPIO_Pin_14, DISABLE);
+main.c(1417): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA,GPIO_Pin_1, ENABLE);
+main.c(1421): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA,GPIO_Pin_1, DISABLE);
+main.c(1426): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA,GPIO_Pin_1, ENABLE);
+main.c(1427): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD,GPIO_Pin_12, ENABLE);
+main.c(1431): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA,GPIO_Pin_1, DISABLE);
+main.c(1432): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD,GPIO_Pin_12, DISABLE);
+main.c(1436): warning:  #188-D: enumerated type mixed with another type
+           GPIO_WriteBit(GPIOE,GPIO_Pin_14, ENABLE);
+main.c(1440): warning:  #188-D: enumerated type mixed with another type
+           GPIO_WriteBit(GPIOE,GPIO_Pin_14, DISABLE);
+main.c(1444): warning:  #188-D: enumerated type mixed with another type
+           GPIO_WriteBit(GPIOE,GPIO_Pin_13, ENABLE);
+main.c(1448): warning:  #188-D: enumerated type mixed with another type
+           GPIO_WriteBit(GPIOE,GPIO_Pin_13, DISABLE);
+main.c(1452): warning:  #188-D: enumerated type mixed with another type
+           GPIO_WriteBit(GPIOE,GPIO_Pin_2, ENABLE);
+main.c(1456): warning:  #188-D: enumerated type mixed with another type
+           GPIO_WriteBit(GPIOE,GPIO_Pin_2, DISABLE);
+main.c(1460): warning:  #188-D: enumerated type mixed with another type
+          GPIO_WriteBit(GPIOE,GPIO_Pin_3, ENABLE);
+main.c(1465): warning:  #188-D: enumerated type mixed with another type
+          GPIO_WriteBit(GPIOE,GPIO_Pin_3, DISABLE);
+main.c(1473): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+     NVIC_InitTypeDef  NVIC_InitStructure;
+main.c(174): warning:  #177-D: function "delay" was declared but never referenced
+  static void delay (int cnt) 
+main.c: 135 warnings, 0 errors
+linking...
+Program Size: Code=17936 RO-data=860 RW-data=496 ZI-data=2024  
+FromELF: creating hex file...
+".\sdadc.axf" - 0 Error(s), 135 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\mazong\sawmachine\user\RTE
+  d:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\1.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

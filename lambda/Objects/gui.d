@@ -1,0 +1,10 @@
+.\objects\gui.o: drive\gui.c
+.\objects\gui.o: drive\gui.h
+.\objects\gui.o: .\lib\inc\stm32f37x.h
+.\objects\gui.o: .\lib\inc\core_cm4.h
+.\objects\gui.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gui.o: .\lib\inc\core_cmInstr.h
+.\objects\gui.o: .\lib\inc\core_cmFunc.h
+.\objects\gui.o: .\lib\inc\core_cm4_simd.h
+.\objects\gui.o: d:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\1.2.0\Device\Include\system_stm32f37x.h
+.\objects\gui.o: drive\ili9328.h

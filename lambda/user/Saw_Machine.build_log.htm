@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jian Delphi, Delphi, LIC=TIVPC-783L0-PC5J8-3M9GH-DQA64-FC0SK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  d:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\mazong\sawmachine\user\sawmachine.uvprojx
+Project File Date:  12/10/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+reuse.h(65): warning:  #47-D: incompatible redefinition of macro "NULL" (declared at line 61 of "d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h")
+  #define NULL  ( (void*) 0 )
+main.c(45): warning:  #69-D: integer conversion resulted in truncation
+  uint16_t SDADC1_DR_Address = 0x20000;
+main.c(209): warning:  #188-D: enumerated type mixed with another type
+                    GPIO_WriteBit(GPIOA,GPIO_Pin_2, ENABLE);
+main.c(213): warning:  #188-D: enumerated type mixed with another type
+                       GPIO_WriteBit(GPIOA,GPIO_Pin_2, DISABLE);
+main.c(142): warning:  #177-D: variable "canbuf" was declared but never referenced
+     u8 canbuf[8];
+main.c(143): warning:  #177-D: variable "res" was declared but never referenced
+     u8 res;
+main.c(144): warning:  #177-D: variable "key" was declared but never referenced
+     u8 key;
+main.c(145): warning:  #177-D: variable "i" was declared but never referenced
+     u8 i, offset, address_eep, j;
+main.c(145): warning:  #177-D: variable "offset" was declared but never referenced
+     u8 i, offset, address_eep, j;
+main.c(145): warning:  #177-D: variable "address_eep" was declared but never referenced
+     u8 i, offset, address_eep, j;
+main.c(145): warning:  #177-D: variable "j" was declared but never referenced
+     u8 i, offset, address_eep, j;
+main.c(146): warning:  #177-D: variable "checksum" was declared but never referenced
+     u16 checksum;
+main.c(149): warning:  #177-D: variable "status" was declared but never referenced
+      TestStatus status;       
+main.c(150): warning:  #177-D: variable "ADC1ConvertedValue" was declared but never referenced
+         uint16_t  ADC1ConvertedValue = 0;
+main.c(297): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+     NVIC_InitTypeDef NVIC_InitStructure;
+main.c(438): warning:  #177-D: variable "f" was declared but never referenced
+      float f;   
+main.c(786): warning:  #177-D: variable "temp" was declared but never referenced
+        u8 temp;
+main.c: 17 warnings, 0 errors
+linking...
+Program Size: Code=10920 RO-data=664 RW-data=388 ZI-data=4372  
+FromELF: creating hex file...
+".\Saw_Machine.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\mazong\sawmachine\user\RTE
+  d:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\1.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

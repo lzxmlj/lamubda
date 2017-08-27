@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="drive">
+        <in>SysTick.h</in>
+        <in>adxl345.c</in>
+        <in>adxl345.h</in>
+        <in>ascii.h</in>
+        <in>exit.c</in>
+        <in>exit.h</in>
+        <in>fatapp.c</in>
+        <in>fatapp.h</in>
+        <in>gui.c</in>
+        <in>gui.h</in>
+        <in>i2c_eeprom.c</in>
+        <in>i2c_eeprom.h</in>
+        <in>ili9328.c</in>
+        <in>ili9328.h</in>
+        <in>key.c</in>
+        <in>key.h</in>
+        <in>led.c</in>
+        <in>led.h</in>
+        <in>sd.c</in>
+        <in>sd.h</in>
+        <in>sdadc.c</in>
+        <in>sdadc.h</in>
+        <in>systick.c</in>
+        <in>uart.c</in>
+        <in>uart.h</in>
+        <in>w25x16.c</in>
+        <in>w25x16.h</in>
+        <in>xpt2046.c</in>
+        <in>xpt2046.h</in>
+      </df>
+      <df name="lib">
+        <df name="inc">
+          <in>core_cm4.h</in>
+          <in>core_cm4_simd.h</in>
+          <in>core_cmFunc.h</in>
+          <in>core_cmInstr.h</in>
+          <in>reuse.h</in>
+          <in>stm32f37x.h</in>
+          <in>stm32f37x_adc.h</in>
+          <in>stm32f37x_can.h</in>
+          <in>stm32f37x_cec.h</in>
+          <in>stm32f37x_comp.h</in>
+          <in>stm32f37x_crc.h</in>
+          <in>stm32f37x_dac.h</in>
+          <in>stm32f37x_dbgmcu.h</in>
+          <in>stm32f37x_dma.h</in>
+          <in>stm32f37x_exti.h</in>
+          <in>stm32f37x_flash.h</in>
+          <in>stm32f37x_gpio.h</in>
+          <in>stm32f37x_i2c.h</in>
+          <in>stm32f37x_iwdg.h</in>
+          <in>stm32f37x_misc.h</in>
+          <in>stm32f37x_pwr.h</in>
+          <in>stm32f37x_rcc.h</in>
+          <in>stm32f37x_rtc.h</in>
+          <in>stm32f37x_sdadc.h</in>
+          <in>stm32f37x_spi.h</in>
+          <in>stm32f37x_syscfg.h</in>
+          <in>stm32f37x_tim.h</in>
+          <in>stm32f37x_usart.h</in>
+          <in>stm32f37x_wwdg.h</in>
+        </df>
+        <df name="src">
+          <in>stm32f37x_adc.c</in>
+          <in>stm32f37x_can.c</in>
+          <in>stm32f37x_cec.c</in>
+          <in>stm32f37x_comp.c</in>
+          <in>stm32f37x_crc.c</in>
+          <in>stm32f37x_dac.c</in>
+          <in>stm32f37x_dbgmcu.c</in>
+          <in>stm32f37x_dma.c</in>
+          <in>stm32f37x_exti.c</in>
+          <in>stm32f37x_flash.c</in>
+          <in>stm32f37x_gpio.c</in>
+          <in>stm32f37x_i2c.c</in>
+          <in>stm32f37x_iwdg.c</in>
+          <in>stm32f37x_misc.c</in>
+          <in>stm32f37x_pwr.c</in>
+          <in>stm32f37x_rcc.c</in>
+          <in>stm32f37x_rtc.c</in>
+          <in>stm32f37x_sdadc.c</in>
+          <in>stm32f37x_spi.c</in>
+          <in>stm32f37x_syscfg.c</in>
+          <in>stm32f37x_tim.c</in>
+          <in>stm32f37x_usart.c</in>
+          <in>stm32f37x_wwdg.c</in>
+        </df>
+      </df>
+      <df name="Libraries">
+        <df name="CMSIS">
+          <df name="Core">
+            <df name="CM3">
+              <df name="startup">
+                <df name="arm">
+                  <in>startup_stm32f10x_cl.s</in>
+                  <in>startup_stm32f10x_hd.s</in>
+                  <in>startup_stm32f10x_ld.s</in>
+                  <in>startup_stm32f10x_md.s</in>
+                </df>
+                <df name="gcc">
+                  <in>startup_stm32f10x_cl.s</in>
+                  <in>startup_stm32f10x_hd.s</in>
+                  <in>startup_stm32f10x_ld.s</in>
+                  <in>startup_stm32f10x_md.s</in>
+                </df>
+                <df name="iar">
+                  <in>startup_stm32f10x_cl.s</in>
+                  <in>startup_stm32f10x_hd.s</in>
+                  <in>startup_stm32f10x_ld.s</in>
+                  <in>startup_stm32f10x_md.s</in>
+                </df>
+              </df>
+              <in>core_cm3.c</in>
+              <in>core_cm3.h</in>
+              <in>stm32f10x.h</in>
+              <in>system_stm32f10x.c</in>
+              <in>system_stm32f10x.h</in>
+            </df>
+          </df>
+        </df>
+        <df name="STM32F10x_StdPeriph_Driver">
+          <df name="inc">
+            <in>misc.h</in>
+            <in>stm32f10x_adc.h</in>
+            <in>stm32f10x_bkp.h</in>
+            <in>stm32f10x_can.h</in>
+            <in>stm32f10x_crc.h</in>
+            <in>stm32f10x_dac.h</in>
+            <in>stm32f10x_dbgmcu.h</in>
+            <in>stm32f10x_dma.h</in>
+            <in>stm32f10x_exti.h</in>
+            <in>stm32f10x_flash.h</in>
+            <in>stm32f10x_fsmc.h</in>
+            <in>stm32f10x_gpio.h</in>
+            <in>stm32f10x_i2c.h</in>
+            <in>stm32f10x_iwdg.h</in>
+            <in>stm32f10x_pwr.h</in>
+            <in>stm32f10x_rcc.h</in>
+            <in>stm32f10x_rtc.h</in>
+            <in>stm32f10x_sdio.h</in>
+            <in>stm32f10x_spi.h</in>
+            <in>stm32f10x_tim.h</in>
+            <in>stm32f10x_usart.h</in>
+            <in>stm32f10x_wwdg.h</in>
+          </df>
+          <df name="src">
+            <in>misc.c</in>
+            <in>stm32f10x_adc.c</in>
+            <in>stm32f10x_bkp.c</in>
+            <in>stm32f10x_can.c</in>
+            <in>stm32f10x_crc.c</in>
+            <in>stm32f10x_dac.c</in>
+            <in>stm32f10x_dbgmcu.c</in>
+            <in>stm32f10x_dma.c</in>
+            <in>stm32f10x_exti.c</in>
+            <in>stm32f10x_flash.c</in>
+            <in>stm32f10x_fsmc.c</in>
+            <in>stm32f10x_gpio.c</in>
+            <in>stm32f10x_i2c.c</in>
+            <in>stm32f10x_iwdg.c</in>
+            <in>stm32f10x_pwr.c</in>
+            <in>stm32f10x_rcc.c</in>
+            <in>stm32f10x_rtc.c</in>
+            <in>stm32f10x_sdio.c</in>
+            <in>stm32f10x_spi.c</in>
+            <in>stm32f10x_tim.c</in>
+            <in>stm32f10x_usart.c</in>
+            <in>stm32f10x_wwdg.c</in>
+          </df>
+        </df>
+      </df>
+      <df name="stm32f3">
+        <in>stm32f30x_conf.h</in>
+        <in>stm32f30x_it.c</in>
+        <in>stm32f30x_it.h</in>
+        <in>stm32f37x_conf.h</in>
+        <in>stm32f37x_it.c</in>
+        <in>stm32f37x_it.h</in>
+        <in>system_stm32f30x.c</in>
+        <in>system_stm32f37x.c</in>
+      </df>
+      <df name="user">
+        <df name="APP">
+          <in>APP_can.c</in>
+          <in>APP_can.h</in>
+          <in>LUX_math.h</in>
+          <in>LUX_types.h</in>
+          <in>can_xfer.c</in>
+          <in>can_xfer.h</in>
+          <in>dd_can.c</in>
+          <in>dd_can.h</in>
+          <in>initialize.c</in>
+          <in>initialize.h</in>
+          <in>interrupt.c</in>
+        </df>
+        <df name="CCP">
+          <in>ccp2conf.c</in>
+          <in>ccp2conf.h</in>
+          <in>ccp2daq.c</in>
+          <in>ccp2daq.h</in>
+          <in>ccp2main.c</in>
+          <in>ccp2main.h</in>
+          <in>ccp2mem.c</in>
+          <in>ccp2mem.h</in>
+          <in>ccp2mode.c</in>
+          <in>ccp2mode.h</in>
+          <in>ccp2nvmd.c</in>
+          <in>ccp2nvmd.h</in>
+          <in>ccp2session_nvm.c</in>
+        </df>
+        <df name="io_config">
+          <in>io_analog_config.h</in>
+          <in>io_can_config.c</in>
+          <in>io_can_config.h</in>
+          <in>io_config.h</in>
+        </df>
+        <in>D.s</in>
+        <in>adc.c</in>
+        <in>adc.h</in>
+        <in>can.c</in>
+        <in>lamuda.c</in>
+        <in>lamuda.h</in>
+        <in>main.c</in>
+        <in>modbus.c</in>
+        <in>reuse.h</in>
+        <in>startup_stm32f37x.s</in>
+        <in>t_gentypes.h</in>
+      </df>
+      <df name="Utilities">
+        <df name="STM32_EVAL">
+          <df name="STM3210B_EVAL">
+            <in>stm3210b_eval.h</in>
+            <in>stm3210b_eval_lcd.c</in>
+            <in>stm3210b_eval_lcd.h</in>
+          </df>
+          <df name="STM3210C_EVAL">
+            <in>Retarget.c</in>
+            <in>stm3210c_eval.h</in>
+            <in>stm3210c_eval_ioe.c</in>
+            <in>stm3210c_eval_ioe.h</in>
+            <in>stm3210c_eval_lcd.c</in>
+            <in>stm3210c_eval_lcd.h</in>
+          </df>
+          <df name="STM3210E_EVAL">
+            <in>stm3210e_eval.h</in>
+            <in>stm3210e_eval_lcd.c</in>
+            <in>stm3210e_eval_lcd.h</in>
+          </df>
+          <in>fonts.h</in>
+          <in>stm32_eval.c</in>
+          <in>stm32_eval.h</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>echo build</buildCommand>
+          <cleanCommand>echo clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="Libraries/CMSIS/Core/CM3/core_cm3.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/core_cm3.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/arm/startup_stm32f10x_cl.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/arm/startup_stm32f10x_hd.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/arm/startup_stm32f10x_ld.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/arm/startup_stm32f10x_md.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/gcc/startup_stm32f10x_cl.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/gcc/startup_stm32f10x_hd.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/gcc/startup_stm32f10x_ld.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/gcc/startup_stm32f10x_md.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/iar/startup_stm32f10x_cl.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/iar/startup_stm32f10x_hd.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/iar/startup_stm32f10x_ld.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/startup/iar/startup_stm32f10x_md.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/stm32f10x.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/system_stm32f10x.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/CMSIS/Core/CM3/system_stm32f10x.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_adc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_bkp.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_can.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_crc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dac.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dbgmcu.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dma.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_exti.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_flash.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_fsmc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_i2c.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_iwdg.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_pwr.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rtc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_sdio.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_spi.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_tim.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_wwdg.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/misc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210B_EVAL/stm3210b_eval.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210B_EVAL/stm3210b_eval_lcd.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210B_EVAL/stm3210b_eval_lcd.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210C_EVAL/Retarget.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210C_EVAL/stm3210c_eval.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210C_EVAL/stm3210c_eval_ioe.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210C_EVAL/stm3210c_eval_ioe.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210C_EVAL/stm3210c_eval_lcd.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210C_EVAL/stm3210c_eval_lcd.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210E_EVAL/stm3210e_eval.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210E_EVAL/stm3210e_eval_lcd.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/STM3210E_EVAL/stm3210e_eval_lcd.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/fonts.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/stm32_eval.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Utilities/STM32_EVAL/stm32_eval.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/SysTick.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/adxl345.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/adxl345.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/ascii.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/exit.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/exit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/fatapp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/fatapp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/gui.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/gui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/i2c_eeprom.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/i2c_eeprom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/ili9328.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/ili9328.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/key.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/key.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/led.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/led.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/sd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/sd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/sdadc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/sdadc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/systick.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/uart.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/uart.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/w25x16.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/w25x16.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="drive/xpt2046.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drive/xpt2046.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/core_cm4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/core_cm4_simd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/core_cmFunc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/core_cmInstr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/reuse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_adc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_can.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_cec.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_comp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_crc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_dac.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_dbgmcu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_dma.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_exti.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_flash.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_gpio.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_i2c.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_iwdg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_misc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_pwr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_rcc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_rtc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_sdadc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_spi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_syscfg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_tim.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_usart.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/inc/stm32f37x_wwdg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_adc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_can.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_cec.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_comp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_crc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_dac.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_dbgmcu.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_dma.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_exti.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_flash.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_gpio.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_i2c.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_iwdg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_misc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_pwr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_rcc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_rtc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_sdadc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_spi.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_syscfg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_tim.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_usart.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lib/src/stm32f37x_wwdg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stm32f3/stm32f30x_conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stm32f3/stm32f30x_it.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stm32f3/stm32f30x_it.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stm32f3/stm32f37x_conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stm32f3/stm32f37x_it.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stm32f3/stm32f37x_it.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stm32f3/system_stm32f30x.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stm32f3/system_stm32f37x.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/APP/APP_can.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/APP/APP_can.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/APP/LUX_math.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/APP/LUX_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/APP/can_xfer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/APP/can_xfer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/APP/dd_can.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/APP/dd_can.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/APP/initialize.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/APP/initialize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/APP/interrupt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2conf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2daq.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2daq.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2main.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2mem.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2mem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2mode.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2mode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2nvmd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2nvmd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/CCP/ccp2session_nvm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/D.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="user/adc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/adc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/can.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/io_config/io_analog_config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/io_config/io_can_config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/io_config/io_can_config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/io_config/io_config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/lamuda.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/lamuda.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/modbus.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="user/reuse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="user/startup_stm32f37x.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="user/t_gentypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
