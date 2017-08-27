@@ -1,0 +1,5 @@
+E:\mazong\e_load\C#\Demo\obj\x64\Debug\Demo.csprojResolveAssemblyReference.cache
+D:\project\e_load\obj\x64\Debug\Demo.csprojResolveAssemblyReference.cache
+D:\project\e_load\obj\x64\Debug\Interop.Kc6100TXActiveX.dll
+D:\mazong\eload\0711\e_load\obj\x64\Debug\Demo.csprojResolveAssemblyReference.cache
+D:\mazong\eload\0711\e_load\obj\x64\Debug\Interop.Kc6100TXActiveX.dll
